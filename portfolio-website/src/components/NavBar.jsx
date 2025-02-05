@@ -17,7 +17,7 @@ const NavBar = () => {
 
     return (
         <div className='bg-black text-white h-[100px] max-w-[1200px] mx-auto flex justify-between items-center'>
-            <h1 className='text-3xl font-bold primary-color ml-4'>PJ</h1>
+            <h1 className='text-4xl font-bold primary-color ml-4'>PJ</h1>
             <ul className='hidden text-white md:flex'>
                 {menuItems.map((item, index) => (
                     <li key={index} className='p-5'>
@@ -30,7 +30,7 @@ const NavBar = () => {
             </div>
 
             <div className={nav ? 'fixed h-full left-0 top-0 w-[60%] bg-[#202121] ease-in-out duration-500 transform translate-x-0' : 'fixed left-[-100%] ease-in-out duration-500'}>
-                <h1 className='text-3xl text-white m-4'>PJ</h1>
+                <h1 className='text-3xl primary-color m-4'>PJ</h1>
                 <ul className='p-8 text-white text-2xl'>
                     {menuItems.map((item, index) => (
                         <li key={index} className='p-2'>
