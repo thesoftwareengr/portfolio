@@ -18,9 +18,9 @@ const NavBar = () => {
     return (
         <div className='bg-black text-white h-[100px] max-w-[1200px] mx-auto flex justify-between items-center'>
             <h1 className='text-4xl font-bold primary-color ml-4'>PJ</h1>
-            <ul className='hidden text-white md:flex'>
+            <ul className='hidden text-gray-400 md:flex'>
                 {menuItems.map((item, index) => (
-                    <li key={index} className='p-5'>
+                    <li key={index} className='p-5 hover:bg-gray-200'>
                         <a href={item.href}>{item.label}</a>
                     </li>
                 ))}
